@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>An-anKnow</title>
+        <style>
+            /* styles.css */
+            /* body {
+                position: absolute;
+                padding-top: 50px;
+            } */
+            #leaderboard {
+                height: 60px;
+            }
+
+            nav {
+                /* position: fixed;
+                padding: 2px; */
+                position: fixed;
+                background-color: #e4e2dd;
+                padding: 10px;
+                height: 65px;
+                width: 100%;
+                z-index: 2;
+            }
+
+            #dropdown-icon{
+                padding-left: 5px;
+                border: 1px;
+                box-sizing: content-box;
+            }
+
+            #dropdown-img{
+                position: relative;
+                top: 12px;
+                height: 47px;
+                width: 55px;
+            }
+
+            #home-img {
+                position: relative;
+                top: 10px;
+                height: 66px;
+                width: 60px;
+            }
+
+            #home-icon{
+                /* padding-left: 10px;
+                padding-bottom: 100px; */
+                position: relative;
+                top: -60px;
+                left: 70px;
+                /* float: right; */
+            }
+
+            .dropdown-btn {
+                background-color: #f1f1f1;
+                padding: 10px;
+                font-size: 16px;
+                border: none;
+                cursor: pointer;
+            }
+
+            .logo {
+                padding-top: 0px;
+                position: fixed;
+                left: 45%;
+                top: 2%
+                /* transform: translateX(-50%); */
+            }
+
+            .logo img {
+                height: 70px;
+            }
+
+            #search {
+                position: fixed;
+                top: 5%;
+                right: 5%;
+                height: 30px;
+            }
+
+            .dropdown-content {
+                display: none;
+                position: absolute;
+                background-color: #f1f1f1;
+                min-width: 160px;
+                box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+                z-index: 1;
+            }
+
+            .dropdown-content a {
+                padding: 12px 16px;
+                text-decoration: none;
+                display: block;
+            }
+
+            .dropdown-content a:hover {
+                background-color: #ddd;
+            }
+
+            .show {
+                display: block;
+            }
+
+            .sep {
+                height: 70px;
+            }
+
+            .highlight {
+                background-color: yellow;
+            }
+
+            body {
+                margin: 0.5px;
+            }
+            
+            #main {
+                position: fixed;
+
+                /* padding-top: 100px; */
+            }
+        </style>
+    </head>
+    <body>
+        <nav>
+            <!-- <button class="dropdown-btn" onclick="openDropdown('dropdown')">Dropdown</button> -->
+            <div id="dropdown-icon">
+                <img src="C:\Users\acer\Downloads\pngwing.com.png" id="dropdown-img" onclick="openDropdown('dropdown')">
+            </div>
+            <div id="dropdown" class="dropdown-content">
+                <a href="#sep1" onclick="openDropdown('dropdown')">Section 1</a>
+                <a href="#sep2" onclick="openDropdown('dropdown')">Section 2</a>
+                <a href="#sep3" onclick="openDropdown('dropdown')">Section 3</a>
+            </div>
+            <!-- <button class="home-btn" onclick="goHome()">Home</button> -->
+            <div id="home-icon">
+                <img src="C:\Users\acer\Downloads\pngwing.com (1).png" id="home-img" onclick="goHome()">
+            </div>
+            <div class="logo">
+                <img src="C:\Users\acer\OneDrive\Pictures\Screenshots\An-anKnow Logo.png" alt="An-anKnow Logo">
+            </div>
+            <div class="search-container">
+                <input type="text" id="search" placeholder="Search...">
+            </div>
+        </nav>
+        <main style="background-color: #fffdd0;">
+            
+            <div id="leaderboard">
+                
+            </div>
+
+            <div class="sep", id="sep1">
+
+            </div>
+            <section id="section1">
+                <h2>Section 1</h2>
+                <!-- Content here -->
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam volutpat mi eget fringilla volutpat. Nullam sagittis diam odio, ac condimentum est euismod congue. Maecenas imperdiet laoreet lorem, eget condimentum quam egestas vel. Nunc viverra quam nec augue molestie pulvinar. Aliquam ut libero sed ligula accumsan consectetur eget nec orci. Suspendisse potenti. Nulla eget ornare quam, vitae tincidunt elit.
+
+Nam condimentum, ipsum quis auctor ullamcorper, enim sapien semper lectus, sed maximus arcu arcu nec purus. Aenean sem purus, viverra quis vulputate in, volutpat rhoncus orci. Mauris pharetra nibh quis ligula laoreet tincidunt. Aenean venenatis ac tellus quis venenatis. Fusce in massa velit. Sed placerat enim nec tortor tempor sodales. Suspendisse molestie iaculis tellus eget varius. Pellentesque cursus, velit et feugiat rutrum, orci ex porta tortor, in accumsan risus dui eu tellus. Morbi id dolor eu tellus elementum tempus. Donec sed erat lobortis, semper lorem in, porta nisl. Curabitur metus mi, molestie sed blandit imperdiet, tincidunt sit amet nunc. Cras urna diam, laoreet vel ultricies id, lacinia quis urna. Integer euismod molestie fermentum. Vestibulum imperdiet dolor urna, eu imperdiet turpis accumsan in.
+
+Donec pharetra porta metus nec sollicitudin. Nunc posuere dapibus turpis quis ultricies. Ut ultricies ultricies ligula congue malesuada. Donec suscipit sodales nisl, ac vestibulum lorem. Nunc lobortis ex et lorem ullamcorper, id faucibus libero interdum. Aenean ornare vestibulum ipsum in eleifend. Donec sed turpis ac velit lobortis venenatis sed vitae neque. Suspendisse nibh leo, laoreet ac est a, maximus rutrum nisi.
+
+Vivamus nec eros at augue auctor tempus. Nam tempus condimentum eros non molestie. In rhoncus eget lacus sed finibus. Nunc id leo urna. Aenean malesuada ornare lobortis. Maecenas tincidunt nibh at lectus laoreet hendrerit. Morbi commodo commodo erat quis elementum. Pellentesque viverra rhoncus orci, nec vestibulum est accumsan non. Aliquam ac diam dolor. Nunc ullamcorper augue risus, eget rhoncus turpis commodo viverra. Donec quis diam eu leo eleifend aliquet quis non mauris. Donec mi lacus, posuere eu bibendum sed, rutrum quis justo. Duis venenatis lacinia odio sit amet imperdiet. Mauris vestibulum gravida pellentesque. Nunc in rhoncus urna. Curabitur et mauris eu libero ultrices maximus.
+
+Suspendisse diam lacus, dictum et pretium quis, feugiat a lectus. Pellentesque ut egestas lacus. Donec nec magna sit amet libero dictum mattis. Praesent sed tellus et turpis consectetur ultricies. Phasellus accumsan venenatis ante, a rhoncus tortor dictum a. Interdum et malesuada fames ac ante ipsum primis in faucibus. Cras vitae arcu in erat ornare varius in interdum magna. Vestibulum varius tortor a turpis bibendum pellentesque. Duis id mauris non nibh feugiat porttitor. Fusce lobortis sapien lacus, ac semper odio tempor vitae. Nam imperdiet gravida ligula a aliquam. Etiam risus magna, volutpat ac purus non, molestie consectetur ante. Etiam nec posuere elit. Cras eu ante ut metus sollicitudin suscipit. Cras eu purus a eros consectetur aliquet. Vivamus quis enim eget massa bibendum aliquam ut nec tellus.
+                </p>
+            </section>
+
+            <div class="sep", id="sep2">
+
+            </div>
+
+            <section id="section2">
+                <h2>Section 2</h2>
+                <!-- Content here -->
+                <p>
+                    Once upon a time, the tao owned a piece of land. It was all he owned. But he cherished it, for it gave him three things, having which, he was content: life, first of all, and liberty, and happiness.
+
+Then one day the Spaniard came and commanded him to pay tribute to the crown of Spain. The tao paid tribute. And he was silent — he was certain that he was still the master of his land.
+
+The Spaniard became rich. But with riches, evil entered into him and he came to the tao a second time. He read to the tao a formidable document saying: “According to this decreto real, which unfortunately you cannot read, this that you have been paying me is not tribute but rent, for the land is not yours but mine.” The tao paid tribute and said nothing … He ceased to be a freeman. He became a serf. Still the tao held his peace. The rent went up and up. The tao starved.
+
+And this time at last he spoke. Not in words, but with that rustic instrument with which he cleared the land once his own — the bolo. He transformed it from an instrument of tillage to an instrument of death, and with it drove away the stranger. Then he returned to his field saying: “Now indeed shall I again be master of this land, once my own, but stolen from me by the trickery of quicker wits than mine.”
+
+But the tao was wrong. For the land had another master. This time not a stranger, but his own countryman grown rich. The tao had a new name, kasama, which to us means partner, but which to the tao meant still a slave, for once more he suffered from his countrymen the same things he had suffered from the stranger: the rents, the usury, and all the rest of it.
+
+Yes, the tao returned to his field thinking that he was free. But he soon discovered that he was still a prisoner. His prison, a two-room shack, rent by every wind, without any comforts, except that three families have there the privilege to starve. The tao’s home has become his very prison. Its doors, if you can call them such, are wide open. It is a prison nonetheless. For the tao is bound to it, not with chains of steel, but with a stronger chain — his honor. To this day, the tao remains a slave, a prisoner of the usurer.
+
+No wonder, then that tao, being a slave, has acquired the habits of a slave. No wonder that after three centuries in chains, without freedom, without hope, he should lose the erect and fearless posture of the freeman, and become the bent, misshapen, indolent, vicious, pitiful thing that he is! Who dares accuse him, who dares rise up in judgement against this man, reduced to this sub-human level by three centuries of oppression. The tao does not come here tonight to be judged — but to judge! Hear then his accusation and his sentence:
+
+I indict the Spanish encomendero for inventing taxes impossible to bear.
+
+I indict the usurer for saddling me with debts impossible to pay.
+
+I indict the irresponsible radical leaders who undermine, with insidious eloquence, the confidence of my kind in our government.
+
+You accuse me of not supporting my family. Free me from bondage, and I shall prove you false.
+
+You accuse me of ignorance. But I am ignorant because my master finds it profitable to keep me ignorant. Free me from bondage, and I shall prove you false.
+
+You accuse me of indolence. But I am indolent not because I have no will, but because I have no hope. Why should I labor, if all the fruits of my labor go to pay an unpayable debt. Free me from bondage, and I shall prove you false.
+
+Give me land. Land to own. Land unbeholden to any tyrant. Land that will be free. Give me land for I am starving. Give me land that my children may not die. Sell it to me, sell it to me at a fair price, as one freeman sells to another and not as a usurer sells to a slave. I am poor, but I will pay it! I will work, work until I fall from weariness for my privilege, for my inalienable right to be free!
+
+BUT IF YOU WILL NOT GRANT ME THIS … If you will not grant me this last request, this ultimate demand, then build a wall around your home … build it high! … build it strong! Place a sentry on every parapet! … for I who have been silent these three hundred years will come in the night when you are feasting, with my cry and my bolo at your door. And may God have mercy on your soul!
+                </p>
+            </section>
+
+            <div class="sep", id="sep3">
+
+            </div>
+
+            <section id="section3">
+                <h2>Section 3</h2>
+                <!-- Content here -->
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam volutpat mi eget fringilla volutpat. Nullam sagittis diam odio, ac condimentum est euismod congue. Maecenas imperdiet laoreet lorem, eget condimentum quam egestas vel. Nunc viverra quam nec augue molestie pulvinar. Aliquam ut libero sed ligula accumsan consectetur eget nec orci. Suspendisse potenti. Nulla eget ornare quam, vitae tincidunt elit.
+
+Nam condimentum, ipsum quis auctor ullamcorper, enim sapien semper lectus, sed maximus arcu arcu nec purus. Aenean sem purus, viverra quis vulputate in, volutpat rhoncus orci. Mauris pharetra nibh quis ligula laoreet tincidunt. Aenean venenatis ac tellus quis venenatis. Fusce in massa velit. Sed placerat enim nec tortor tempor sodales. Suspendisse molestie iaculis tellus eget varius. Pellentesque cursus, velit et feugiat rutrum, orci ex porta tortor, in accumsan risus dui eu tellus. Morbi id dolor eu tellus elementum tempus. Donec sed erat lobortis, semper lorem in, porta nisl. Curabitur metus mi, molestie sed blandit imperdiet, tincidunt sit amet nunc. Cras urna diam, laoreet vel ultricies id, lacinia quis urna. Integer euismod molestie fermentum. Vestibulum imperdiet dolor urna, eu imperdiet turpis accumsan in.
+
+Donec pharetra porta metus nec sollicitudin. Nunc posuere dapibus turpis quis ultricies. Ut ultricies ultricies ligula congue malesuada. Donec suscipit sodales nisl, ac vestibulum lorem. Nunc lobortis ex et lorem ullamcorper, id faucibus libero interdum. Aenean ornare vestibulum ipsum in eleifend. Donec sed turpis ac velit lobortis venenatis sed vitae neque. Suspendisse nibh leo, laoreet ac est a, maximus rutrum nisi.
+
+Vivamus nec eros at augue auctor tempus. Nam tempus condimentum eros non molestie. In rhoncus eget lacus sed finibus. Nunc id leo urna. Aenean malesuada ornare lobortis. Maecenas tincidunt nibh at lectus laoreet hendrerit. Morbi commodo commodo erat quis elementum. Pellentesque viverra rhoncus orci, nec vestibulum est accumsan non. Aliquam ac diam dolor. Nunc ullamcorper augue risus, eget rhoncus turpis commodo viverra. Donec quis diam eu leo eleifend aliquet quis non mauris. Donec mi lacus, posuere eu bibendum sed, rutrum quis justo. Duis venenatis lacinia odio sit amet imperdiet. Mauris vestibulum gravida pellentesque. Nunc in rhoncus urna. Curabitur et mauris eu libero ultrices maximus.
+
+Suspendisse diam lacus, dictum et pretium quis, feugiat a lectus. Pellentesque ut egestas lacus. Donec nec magna sit amet libero dictum mattis. Praesent sed tellus et turpis consectetur ultricies. Phasellus accumsan venenatis ante, a rhoncus tortor dictum a. Interdum et malesuada fames ac ante ipsum primis in faucibus. Cras vitae arcu in erat ornare varius in interdum magna. Vestibulum varius tortor a turpis bibendum pellentesque. Duis id mauris non nibh feugiat porttitor. Fusce lobortis sapien lacus, ac semper odio tempor vitae. Nam imperdiet gravida ligula a aliquam. Etiam risus magna, volutpat ac purus non, molestie consectetur ante. Etiam nec posuere elit. Cras eu ante ut metus sollicitudin suscipit. Cras eu purus a eros consectetur aliquet. Vivamus quis enim eget massa bibendum aliquam ut nec tellus.
+                </p>
+            </section>
+        </main>
+
+        <script>
+            // script.js
+            function openDropdown(dropdownId) {
+                let dropdown = document.getElementById(dropdownId);
+                if (dropdown.style.display === "block") {
+                    dropdown.style.display = "none";
+                } else {
+                    dropdown.style.display = "block";
+                }
+            }
+
+            function scrollToContent(elementId) {
+                const element = document.getElementById(elementId);
+                element.scrollIntoView({ behavior: 'smooth' });
+
+            }
+
+            function goHome() {
+                window.scrollTo({ top: 0, behavior: 'smooth' });
+            }
+
+            // Add event listeners for the dropdown links
+            // const dropdownLinks = document.querySelectorAll('.dropdown-content a');
+            // dropdownLinks.forEach(link => {
+            //     link.addEventListener('click', () => {
+            //         scrollToContent(link.textContent.toLowerCase());
+            //         // Close the dropdown after clicking a link
+            //         alert("hi");
+            //         let dropdown = link.closest('.dropdown-btn').nextElementSibling;
+            //         dropdown.style.display = "none";
+            //     });
+            // });
+
+            const search = document.getElementById('search');
+            // const main = document.getElementById('main');
+            const body = document.body;
+
+            search.addEventListener('input', () => {
+            const query = search.value.toLowerCase();
+            const textElements = body.querySelectorAll('p');
+
+                textElements.forEach(element => {
+                    const regex = new RegExp(`(${query})`, 'gi');
+                    const newText = element.textContent.replace(regex, '<span class="highlight">$1</span>');
+                    element.innerHTML = newText;
+                });
+            });
+        </script>
+    </body>
+</html>
